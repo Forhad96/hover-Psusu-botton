@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(44, 44, 10);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.btn-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    display: inline-block;
+    position: relative;
+}
+
+a::before,
+
+a::after{
+    content: "";
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    transition: 0.3s;
+    transition-delay: 0.3s;
+
+}
+
+a::before{
+    height: 2px;
+    width: 0;
+    top: 0;
+    right: 0;
+}
+
+a::after{
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+}
+
+a:hover::before{
+    width: 100%;
+    background-color: chocolate;
+}
+a:hover::after{
+    width: 100%;
+    background-color: chocolate;
+
+}
+
+span{
+    background-color: rgb(80, 130, 6);
+    padding: 10px 30px;
+    display: block;
+}
+
+span::before,span::after{
+    content: "";
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    transition: 0.3s;
+    transition-delay: 0s;
+}
+
+span::before{
+    height: 0;
+    width: 2px;
+    top: 0;
+    left: 0;
+    background-color: crimson;
+}
+
+span::after{
+    height: 0;
+    width: 2px;
+    bottom: 0;
+    right: 0;
+    background-color: crimson;
+
+}
+
+a:hover span::before{
+    height: 100%;
+}
+a:hover span::after{
+    height: 100%;
+}
+
+
+
+/* /////// */
+
+.btn2-container{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+}
+
+.btn2a{
+    color: magenta;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn2a::before, .btn2a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #FFF;
+    transition: 1s;
+}
+.btn2a::before{
+    height: 0;
+    width: 0;
+    top: 0;
+    right: 0;
+}
+
+.btn2a::after{
+    height: 0;
+    width: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.btn2a:hover::before{
+    width: 50%;
+    height: 50%;
+    background-color: red;
+    border-radius: ;
+}
+.btn2a:hover::after{
+    width: 50%;
+    height: 50%;
+    background-color: green;
+
+}
+/* ////// */
+.btn2span{
+    background-color: gold;
+    padding: 10px 30px;
+    display: block;
+
+}
+
+.btn2span::before, .btn2span::after{
+    content: "";
+    display: block;
+    position: absolute;
+    transition: 1s;
+
+
+
+}
+
+.btn2span::after{
+    height: 0;
+    width: 0;
+    bottom: 0;
+    right: 0;
+
+}
+.btn2span::before{
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+
+}
+.btn2a:hover span::after{
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+}
+.btn2a:hover span::before{
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+}
